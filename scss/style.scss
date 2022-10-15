@@ -1,0 +1,158 @@
+$color1: #480355;
+$color2: #9448BC;
+$color3: #7699D4;
+$color4: #63B4D1;
+$color5: #fff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, main {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #sect1 {
+    width: 50%;
+    height: 50%;
+    background-color: $color1;
+  }
+  
+  #sect2 {
+    width: 50%;
+    height: 50%;
+    background-color: $color2;
+  }
+  
+  #sect3 {
+    width: 50%;
+    height: 50%;
+    background-color: $color3;
+  }
+  
+  #sect4 {
+    width: 50%;
+    height: 50%;
+    background-color: $color4;
+  }
+}
+
+// swing buttons
+@keyframes swing {
+  0% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  100% { transform: rotate(5deg); }
+}
+
+// buttons
+.hamburguer {
+  width: 5em;
+  height: 5em;
+  border-radius: .5em;
+  cursor: pointer;
+  
+  &#hamburguer1 { 
+    background-color: $color4; 
+    border: none; 
+  }
+  &#hamburguer2 { 
+    background-color: $color3; 
+    border: none;
+  }
+  &#hamburguer3 { 
+    background-color: $color2; 
+    border: none;
+  }
+  &#hamburguer4 { 
+    background-color: $color1; 
+    border: none;
+  }
+  
+  &:hover {
+    animation-name: swing;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+  }
+  
+  // hyphen
+  .hyphen {
+    width: 3em;
+    height: .5em;
+    border-radius: .25em;
+    background-color: $color5;
+    margin: .3em auto;
+    position: relative;
+    transition: all .5s;
+  }
+  
+  // hyphen hover
+  // first button  
+  .hy1 {
+    transform: rotate(45deg);
+    top: .75em;
+  }
+  .hy2 {
+    transform: rotate(45deg);
+  }
+  .hy3 {
+    transform: rotate(135deg);
+    bottom: .8em;
+  }
+  // second button  
+  .hy4 {
+    transform: rotate(135deg);
+    top: .75em;
+  }
+  .hy5 {
+    transform: rotate(135deg);
+  }
+  .hy6 {
+    transform: rotate(225deg);
+    bottom: .8em;
+  }
+  // third button
+  .hy7 {
+    width: 1.5em;
+    transform: rotate(45deg);
+    top: .2em;
+    right: .6em;
+  }
+  .hy8 {
+    transform: rotate(-45deg);
+  }
+  .hy9 {
+    width: 1.5em;
+    transform: rotate(45deg);
+    left: .6em;
+    bottom: .15em;
+  }
+  // fourth button
+  .hy10 {
+    width: 1.5em;
+    transform: rotate(225deg);
+    top: .2em;
+    right: .6em;
+  }
+  .hy11 {
+    transform: rotate(135deg);
+  }
+  .hy12 {
+    width: 1.5em;
+    transform: rotate(225deg);
+    left: .6em;
+    bottom: .15em;
+  }
+}

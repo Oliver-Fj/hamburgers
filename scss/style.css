@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, main {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #sect1 {
+  width: 50%;
+  height: 50%;
+  background-color: #480355;
+}
+main #sect2 {
+  width: 50%;
+  height: 50%;
+  background-color: #9448BC;
+}
+main #sect3 {
+  width: 50%;
+  height: 50%;
+  background-color: #7699D4;
+}
+main #sect4 {
+  width: 50%;
+  height: 50%;
+  background-color: #63B4D1;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+.hamburguer {
+  width: 5em;
+  height: 5em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+.hamburguer#hamburguer1 {
+  background-color: #63B4D1;
+  border: none;
+}
+.hamburguer#hamburguer2 {
+  background-color: #7699D4;
+  border: none;
+}
+.hamburguer#hamburguer3 {
+  background-color: #9448BC;
+  border: none;
+}
+.hamburguer#hamburguer4 {
+  background-color: #480355;
+  border: none;
+}
+.hamburguer:hover {
+  animation-name: swing;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+.hamburguer .hyphen {
+  width: 3em;
+  height: 0.5em;
+  border-radius: 0.25em;
+  background-color: #fff;
+  margin: 0.3em auto;
+  position: relative;
+  transition: all 0.5s;
+}
+.hamburguer .hy1 {
+  transform: rotate(45deg);
+  top: 0.75em;
+}
+.hamburguer .hy2 {
+  transform: rotate(45deg);
+}
+.hamburguer .hy3 {
+  transform: rotate(135deg);
+  bottom: 0.8em;
+}
+.hamburguer .hy4 {
+  transform: rotate(135deg);
+  top: 0.75em;
+}
+.hamburguer .hy5 {
+  transform: rotate(135deg);
+}
+.hamburguer .hy6 {
+  transform: rotate(225deg);
+  bottom: 0.8em;
+}
+.hamburguer .hy7 {
+  width: 1.5em;
+  transform: rotate(45deg);
+  top: 0.2em;
+  right: 0.6em;
+}
+.hamburguer .hy8 {
+  transform: rotate(-45deg);
+}
+.hamburguer .hy9 {
+  width: 1.5em;
+  transform: rotate(45deg);
+  left: 0.6em;
+  bottom: 0.15em;
+}
+.hamburguer .hy10 {
+  width: 1.5em;
+  transform: rotate(225deg);
+  top: 0.2em;
+  right: 0.6em;
+}
+.hamburguer .hy11 {
+  transform: rotate(135deg);
+}
+.hamburguer .hy12 {
+  width: 1.5em;
+  transform: rotate(225deg);
+  left: 0.6em;
+  bottom: 0.15em;
+}
+
+/*# sourceMappingURL=style.css.map */
